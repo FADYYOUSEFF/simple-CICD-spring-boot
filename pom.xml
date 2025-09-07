@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>simple-CICD-app</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>simple-CICD-app</name>
 	<description>a simple spring boot app to impelement CICD concept</description>
 	<url/>

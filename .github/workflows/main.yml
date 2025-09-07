@@ -5,6 +5,7 @@ on:
     branches:
       - main
 jobs:
+
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -23,4 +24,25 @@ jobs:
 
       - name: build the application
         run: mvn -B package --file pom.xml
-      
+
+      - name: build docker image
+        uses: actions/checkout@v3
+        with:
+          context: .
+          dockerfile: Dockerfile
+          push: false
+          tage: ${{secrets.DOCKER_HUB_USERNAME}}/simple-CICD-app:latest
+
+      - name: login to docker hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{secrets.DOCKER_HUB_USERNAME}}
+          password: ${{secrets.DOCKER_HUB_ACCESS_TOKEN}}
+
+      - name: push docker image
+        uses: actions/checkout@v3
+        with:
+          context: .
+          dockerfile: Dockerfile
+          push: true
+          tage: ${{secrets.DOCKER_HUB_USERNAME}}/simple-CICD-app:latest
