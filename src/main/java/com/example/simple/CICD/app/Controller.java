@@ -11,4 +11,11 @@ public class Controller {
     public String home(){
         return "this is simple end point to implement CICD. ";
     }
+
+    @GetMapping
+    public String sayHello(){
+        return "hello";
+    }
 }
+
+
