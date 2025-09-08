@@ -12,7 +12,9 @@ public class Controller {
         return "this is simple end point to implement CICD. ";
     }
 
- 
+    public String sayHello(){
+        return "hello";
+    }
 }
 
 
