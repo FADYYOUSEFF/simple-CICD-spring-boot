@@ -5,7 +5,7 @@ services:
     image: fadyyousef/simple-cicd-app:latest
     container_name: app
     ports:
-      - "8080:8080"
+      - "8080:9099"
 
   watchtower:
     image: containrrr/watchtower

@@ -6,4 +6,4 @@ COPY ./target/simple-CICD-app-1.0.0.jar /app/simple-CICD-app.jar
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "simple-CICD-app.jar"]
+CMD ["java", "-jar", "simple-CICdockerD-app.jar"]
