@@ -2,7 +2,7 @@ FROM openjdk:21-jdk
 
 WORKDIR /app
 
-COPY ./target/simple-CICD-app-1.0.0 /app/simple-CICD-app.jar
+COPY ./target/simple-CICD-app-1.0.0.jar /app/simple-CICD-app.jar
 
 EXPOSE 8080
 
