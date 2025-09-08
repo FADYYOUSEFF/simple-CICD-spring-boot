@@ -36,4 +36,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ vars.DOCKERHUB_USERNAME }}/simple-CICD-app:latest
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/simple-cicd-app:latest
