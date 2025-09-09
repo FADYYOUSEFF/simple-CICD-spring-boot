@@ -12,6 +12,7 @@ public class Controller {
         return "this is simple end point to implement CICD. ";
     }
 
+    @GetMapping
     public String sayHello(){
         return "hello";
     }
